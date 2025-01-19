@@ -17,7 +17,7 @@
 #define NOZZLE_TYPE "E3Dv6full"
 
 // Printer name
-#define CUSTOM_MENDEL_NAME "Prusa i3 MK3S"
+#define CUSTOM_MENDEL_NAME "TB Bear MK3S" // "Prusa i3 MK3S"
 
 // Electronics
 #define MOTHERBOARD BOARD_EINSY_1_0a
@@ -68,7 +68,7 @@
 #define Z_MIN_POS 0.15
 
 // Z height correction value
-#define Z_MAX_POS_XYZ_CALIBRATION_CORRECTION 9
+#define Z_MAX_POS_XYZ_CALIBRATION_CORRECTION 2 // 9 -> 2 for Bear upgrade
 
 // Canceled home position
 #define X_CANCEL_POS 50

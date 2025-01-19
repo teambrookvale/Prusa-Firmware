@@ -1,3 +1,16 @@
+# Team Brookvale update
+Build steps
+```
+conda create -n prusa python=3.13
+conda activate prusa
+./utils/bootstrap.py
+mkdir build                                                                              
+cd build
+cmake .. -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_TOOLCHAIN_FILE=../cmake/AvrGcc.cmake
+ninja
+```
+Flash `/build/MK3S_MK3S+_FW_3.14.1_MULTILANG.hex` or similar using Configuration -> Firmware Flasher in PrusaSlicer
+
 # Prusa Firmware MK3
 
 This repository contains the source code and the development versions of the firmware running on the [Original Prusa i3](https://prusa3d.com/) MK3S/MK3/MK2.5S/MK2.5 line of printers.
