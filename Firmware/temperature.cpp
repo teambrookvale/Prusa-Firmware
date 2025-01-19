@@ -2195,11 +2195,11 @@ static void handle_warning()
         if (first) {
             if(warn_beep) {
                 lcd_setalertstatuspgm(_T(MSG_THERMAL_ANOMALY), LCD_STATUS_INFO);
-                WRITE(BEEPER, HIGH);
+//                WRITE(BEEPER, HIGH);          // TB no beep
             }
             first = false;
         } else {
-            if(warn_beep) TOGGLE(BEEPER);
+//            if(warn_beep) TOGGLE(BEEPER);     // TB no beep
         }
     } else {
         // warning cleared, reset state
